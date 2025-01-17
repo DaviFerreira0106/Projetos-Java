@@ -12,7 +12,7 @@ public class PolimorfismoHeranca {
 
     public static void main(String[] args) {
         
-        Funcionario objeto = new Diretor();
+        Funcionario objeto = new Funcionario();
         
         objeto.setNome("Davi");
         objeto.setCpf("4444444444444");
@@ -21,6 +21,10 @@ public class PolimorfismoHeranca {
         System.out.println("Nome: "+objeto.getNome());
         System.out.println("CPF: "+objeto.getCpf());
         System.out.println("Salario: "+objeto.getSalario());
+        System.out.println("Bonificação: "+objeto.calcularBonificacao());
+        
+        objeto = new Gerente();
+        
         System.out.println("Bonificação: "+objeto.calcularBonificacao());
     }
 }
