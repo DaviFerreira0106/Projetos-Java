@@ -12,13 +12,20 @@ public class SomaValor {
             System.out.print("\nDigite um número: ");
             if (!objTeclado.hasNextInt()) {
                 System.out.println("Digite um valor válido!");
-            }else if(objTeclado.nextInt() < 0) {
-                ligado = false;
-            } else {
+            }else {
                 int num = objTeclado.nextInt();
+
+                if(num < 0){
+                    ligado = false;
+                    num = 0;
+                }
+
                 valor = num + valor;
                 System.out.printf("\nValor agregado: %d", valor);
+
             }
         } while(ligado);
     }
 }
+
+
