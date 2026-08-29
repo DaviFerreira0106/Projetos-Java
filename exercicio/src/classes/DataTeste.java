@@ -8,6 +8,6 @@ public class DataTeste {
         objData.mes = 6;
         objData.ano = 2002;
 
-        System.out.printf("Data: %d/%d/%d", objData.dia, objData.mes, objData.ano);
+        System.out.printf(objData.obterData());
     }
 }
