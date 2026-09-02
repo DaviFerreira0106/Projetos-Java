@@ -4,10 +4,11 @@ public class DataTeste {
 
     public static void main(String[] args) {
         Data objData = new Data();
-        objData.dia = 1;
-        objData.mes = 6;
-        objData.ano = 2002;
 
-        System.out.printf(objData.obterData());
+        System.out.println(objData.obterData());
+
+        Data obj = new Data(1,  6, 2002);
+
+        System.out.printf(obj.obterData());
     }
 }
