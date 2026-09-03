@@ -6,9 +6,8 @@ public class ProdutoTeste {
         Produto p1 = new Produto();
         p1.nome = "Notebook";
         p1.preco = 3499.98;
-        p1.desconto = 0.15;
 
-        Produto p2 = new Produto("Celular", 2259.99, 0.2);
+        Produto p2 = new Produto("Celular", 2259.99);
 
         double precoDesconto1 = p1.precoComDesconto();
         double precoDesconto2 = p2.precoComDesconto();
