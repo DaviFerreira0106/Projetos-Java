@@ -11,6 +11,8 @@ public class DesafioPessoa {
     }
 
     void comer(DesafioComida comida){
-        this.peso = this.peso + comida.peso;
+        if(comida != null) {
+            this.peso = this.peso + comida.peso;
+        }
     }
 }
