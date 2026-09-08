@@ -3,7 +3,7 @@ package collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashSetCollections {
+public class HashSetHeterogeneo {
 
     public static void main(String[] args) {
         HashSet objSet = new HashSet();
