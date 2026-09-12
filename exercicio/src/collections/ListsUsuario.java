@@ -9,6 +9,11 @@ public class ListsUsuario {
     }
 
     @Override
+    public int hashCode() {
+        return this.nome.length();
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj instanceof ListsUsuario) {
             return this.nome.equals(((ListsUsuario) obj).nome);
